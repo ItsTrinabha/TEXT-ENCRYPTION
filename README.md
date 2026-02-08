@@ -53,7 +53,6 @@ source venv/bin/activate
 
 ### 3️⃣ Install dependencies
 pip install -r requirements.txt
----
 ▶️ Running the Applications
 🖥️ GUI Version
 python gui_app.py
@@ -71,25 +70,25 @@ Uses public key for encryption
 Uses private key for decryption
 ---
 ⚠️ Decryption requires the correct cryptographic parameters provided by the user.
----
+
 🧠 Security Concepts Demonstrated
 Symmetric vs Asymmetric Encryption
 Key Management
 Stateless Cryptographic Design
 Hashing for Integrity
 Secure UI/UX for cryptographic tools
----
+
 📌 Future Enhancements
 Password-based encryption (PBKDF2)
 Hybrid Encryption (AES + RSA)
 File Decryption
 HTTPS Deployment
 Audit Logging
----
+
 👨‍💻 Author
 Trinabha Dixit
 Cybersecurity Student | Blockchain & Security Enthusiast
----
+
 📜 Disclaimer
 This project is for educational purposes only and should not be used in production without security hardening.
 ---
