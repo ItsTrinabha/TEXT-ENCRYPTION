@@ -23,72 +23,110 @@ The project demonstrates **secure encryption, decryption, hashing, and key handl
 
 ## 🏗️ Project Structure
 
+```
 TEXT-ENCRYPTION/
-│
 ├── crypto_utils.py
 ├── gui_app.py
 ├── web_app.py
 ├── requirements.txt
-│
+├── README.md
+├── render.yaml
+├── requirements.txt
 ├── templates/
-│ └── index.html
-│
+│   └── index.html
 └── static/
-└── style.css
+    └── style.css
+```
+
 ---
 ## ⚙️ Installation
 
 ### 1️⃣ Clone the repository
 
+```bash
 git clone https://github.com/<your-username>/text-encryption-tool.git
 cd text-encryption-tool
+```
 
 ### 2️⃣ Create virtual environment
+
+```bash
 python -m venv venv
-Activate:
-Windows:
-venv\Scripts\activate
-Linux / macOS:
-source venv/bin/activate
+```
+
+**Activate:**
+- **Windows:**
+  ```bash
+  venv\Scripts\activate
+  ```
+- **Linux / macOS:**
+  ```bash
+  source venv/bin/activate
+  ```
 
 ### 3️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
-▶️ Running the Applications
-🖥️ GUI Version
+```
+
+---
+
+## ▶️ Running the Applications
+
+### 🖥️ GUI Version
+
+```bash
 python gui_app.py
-🌐 Web Version
+```
+
+### 🌐 Web Version
+
+```bash
 python web_app.py
-Open in browser:
-http://127.0.0.1:5000
+```
+
+Open in your browser: http://127.0.0.1:5000
+
+## 🔐 How Encryption Works
+
+### AES / DES
+- Generates a secret key + nonce
+- Same key is used for encryption and decryption
+
+### RSA
+- Uses public key for encryption
+- Uses private key for decryption
 ---
-🔐 How Encryption Works
-AES / DES
-Generates a secret key + nonce
-Same key is used for encryption and decryption
-RSA
-Uses public key for encryption
-Uses private key for decryption
+
+### ⚠️ Security Note
+Decryption requires the correct cryptographic parameters provided by the user.
+
+## 🧠 Security Concepts Demonstrated
+
+- Symmetric vs Asymmetric Encryption
+- Key Management
+- Stateless Cryptographic Design
+- Hashing for Integrity
+- Secure UI/UX for cryptographic tools
+
+## 📌 Future Enhancements
+
+- Password-based encryption (PBKDF2)
+- Hybrid Encryption (AES + RSA)
+- File Decryption
+- HTTPS Deployment
+- Audit Logging
+
 ---
-⚠️ Decryption requires the correct cryptographic parameters provided by the user.
 
-🧠 Security Concepts Demonstrated
-Symmetric vs Asymmetric Encryption
-Key Management
-Stateless Cryptographic Design
-Hashing for Integrity
-Secure UI/UX for cryptographic tools
+## 👨‍💻 Author
 
-📌 Future Enhancements
-Password-based encryption (PBKDF2)
-Hybrid Encryption (AES + RSA)
-File Decryption
-HTTPS Deployment
-Audit Logging
+**Trinabha Dixit**  
+*Cybersecurity Student | Blockchain & Security Enthusiast*
 
-👨‍💻 Author
-Trinabha Dixit
-Cybersecurity Student | Blockchain & Security Enthusiast
+---
 
-📜 Disclaimer
+## 📜 Disclaimer
+
 This project is for educational purposes only and should not be used in production without security hardening.
----
