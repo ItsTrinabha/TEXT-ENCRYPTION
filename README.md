@@ -35,7 +35,7 @@ TEXT-ENCRYPTION/
 │
 └── static/
 └── style.css
-
+---
 ## ⚙️ Installation
 
 ### 1️⃣ Clone the repository
@@ -43,7 +43,7 @@ TEXT-ENCRYPTION/
 git clone https://github.com/<your-username>/text-encryption-tool.git
 cd text-encryption-tool
 
-2️⃣ Create virtual environment
+### 2️⃣ Create virtual environment
 python -m venv venv
 Activate:
 Windows:
@@ -51,8 +51,9 @@ venv\Scripts\activate
 Linux / macOS:
 source venv/bin/activate
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 pip install -r requirements.txt
+---
 ▶️ Running the Applications
 🖥️ GUI Version
 python gui_app.py
@@ -60,7 +61,7 @@ python gui_app.py
 python web_app.py
 Open in browser:
 http://127.0.0.1:5000
-
+---
 🔐 How Encryption Works
 AES / DES
 Generates a secret key + nonce
@@ -68,26 +69,27 @@ Same key is used for encryption and decryption
 RSA
 Uses public key for encryption
 Uses private key for decryption
-
+---
 ⚠️ Decryption requires the correct cryptographic parameters provided by the user.
-
+---
 🧠 Security Concepts Demonstrated
 Symmetric vs Asymmetric Encryption
 Key Management
 Stateless Cryptographic Design
 Hashing for Integrity
 Secure UI/UX for cryptographic tools
-
+---
 📌 Future Enhancements
 Password-based encryption (PBKDF2)
 Hybrid Encryption (AES + RSA)
 File Decryption
 HTTPS Deployment
 Audit Logging
-
+---
 👨‍💻 Author
 Trinabha Dixit
 Cybersecurity Student | Blockchain & Security Enthusiast
-
+---
 📜 Disclaimer
 This project is for educational purposes only and should not be used in production without security hardening.
+---
