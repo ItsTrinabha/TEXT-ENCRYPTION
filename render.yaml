@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cyber-encryption-tool
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python web_app.py
