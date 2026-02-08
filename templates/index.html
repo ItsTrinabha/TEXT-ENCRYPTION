@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Encryption Tool</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Orbitron:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1 class="main-heading">CYBER ENCRYPTION TOOL</h1>
+
+<form method="post" class="container">
+
+    <h2 class="section-heading">Plain Text (Encryption)</h2>
+    <textarea name="plain" placeholder="Enter text to encrypt"></textarea>
+
+    <h2 class="section-heading">Select Algorithm</h2>
+    <select name="algo">
+        <option value="AES">AES (Key + Nonce)</option>
+        <option value="DES">DES (Key + Nonce)</option>
+        <option value="RSA">RSA (Private Key)</option>
+    </select>
+
+    <button type="submit" name="action" value="encrypt">Encrypt</button>
+
+    <hr>
+
+    <h2 class="section-heading">Cipher Text</h2>
+    <textarea name="cipher" placeholder="Paste cipher text here"></textarea>
+
+    <h2 class="section-heading">Key / Private Key</h2>
+    <textarea name="key" placeholder="Paste key or private key here"></textarea>
+
+    <h2 class="section-heading">Nonce (AES / DES only)</h2>
+    <textarea name="nonce" placeholder="Paste nonce here"></textarea>
+
+    <button type="submit" name="action" value="decrypt">Decrypt</button>
+
+</form>
+
+{% if encrypted %}
+<div class="output">
+    <h2 class="section-heading">Encryption Output (COPY THESE)</h2>
+
+    <p><b>Algorithm:</b> {{ encrypted.algo }}</p>
+
+    <div class="box">{{ encrypted.cipher }}</div>
+
+    {% if encrypted.key %}
+    <div class="box">{{ encrypted.key }}</div>
+    {% endif %}
+
+    {% if encrypted.private_key %}
+    <div class="box">{{ encrypted.private_key }}</div>
+    {% endif %}
+
+    {% if encrypted.nonce %}
+    <div class="box">{{ encrypted.nonce }}</div>
+    {% endif %}
+</div>
+{% endif %}
+
+{% if decrypted %}
+<div class="output">
+    <h2 class="section-heading">Decrypted Output</h2>
+    <div class="box">{{ decrypted }}</div>
+</div>
+{% endif %}
+
+{% if error %}
+<div class="error">{{ error }}</div>
+{% endif %}
+
+</body>
+</html>

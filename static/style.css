@@ -1,0 +1,99 @@
+/* ---------- BASE ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+    /* VISIBLE white grid */
+    background-image:
+        linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+
+/* ---------- HEADINGS ---------- */
+.main-heading {
+    font-family: 'Nabla', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-heading {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 25px;
+    color: #c77dff;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ---------- INPUTS ---------- */
+textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #0a0a0a;
+    color: white;
+    border: 2px solid #9d4edd; /* purple border */
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    height: 90px;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-family: 'Orbitron', sans-serif;
+    background: #9d4edd;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #c77dff;
+}
+
+/* ---------- OUTPUT BOX ---------- */
+.output {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.box {
+    background: #0f0f0f;
+    border: 2px solid #9d4edd;
+    padding: 12px;
+    margin-top: 10px;
+    word-break: break-all;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------- ERROR ---------- */
+.error {
+    color: red;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid rgba(255,255,255,0.2);
+}
